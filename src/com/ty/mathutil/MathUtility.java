@@ -30,7 +30,7 @@ public class MathUtility {
             return 1;
 
         //song sot den doan nay, sure n = 0..20
-        long result = 0; //co tinh de value nay
+        long result = 1; //co tinh de value nay
         for (int i = 2; i <= n; i++) 
             result *= i;
         //n! = 1.2.3.4.5....n
