@@ -22,19 +22,29 @@ public class MathUtility {
     //am giai thua ko tinh dc
     //ham chi chap nhan tu 0..20! -> long
     //0! = 1! = 1
-    public static long getFactorial(int n) {
+//    public static long getFactorial(int n) {
+//        if (n < 0 || n > 20) 
+//            throw new IllegalArgumentException("Invaild argument. n must be betewen 0..20");
+//
+//        if (n == 0 || n == 1)
+//            return 1;
+//
+//        //song sot den doan nay, sure n = 0..20
+//        long result = 1; //co tinh de value nay
+//        for (int i = 2; i <= n; i++) 
+//            result *= i;
+//        //n! = 1.2.3.4.5....n
+//        return result;
+//
+//    }
+    
+        public static long getFactorial(int n) {
         if (n < 0 || n > 20) 
             throw new IllegalArgumentException("Invaild argument. n must be betewen 0..20");
 
         if (n == 0 || n == 1)
-            return 1;
-
-        //song sot den doan nay, sure n = 0..20
-        long result = 1; //co tinh de value nay
-        for (int i = 2; i <= n; i++) 
-            result *= i;
-        //n! = 1.2.3.4.5....n
-        return result;
-
+            return 1; 
+        
+        return n * getFactorial(n-1);
     }
 }
