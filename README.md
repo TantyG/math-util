@@ -1,5 +1,8 @@
 ## Welcome to Math-Utility Respository. This repo offers various math methods used as a helper for your project.
 
+[![MathUtil | Demo CI Process | ©2021 by tan.ty](https://github.com/TantyG/math-util/actions/workflows/mathutil-ci.yml/badge.svg)](https://github.com/TantyG/math-util/actions/workflows/mathutil-ci.yml)
+
+
 
 ### _You will find in this repo the following stuff:_
 
